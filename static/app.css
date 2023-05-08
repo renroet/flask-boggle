@@ -44,22 +44,18 @@ table {
 }
 
 td {
-    /* border-collapse: collapse; */
     border: solid black 3px;
     table-layout: fixed;
     width: 150px;
     overflow: hidden;
 }
 
-/* .container {
-    position: relative;
-} */
+
 
 #score {
     position: absolute;
     top: 10px;
     left: 42px;
-    /* border: solid black 2px; */
     width: 50px;
     height: 60px;
     text-align: center;
