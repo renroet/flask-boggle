@@ -5,14 +5,35 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="/static/app.css">
-    <title>Home</title>
+    <title>Boggle</title>
 </head>
 <body>
-     <h1>Bogle!</h1>
-        <p>
-            Working with styles
-        </p>
-    
+     <h1>Boggle!</h1>
+    <div id="game">
+    <form action="" id="guess" method="">
+        <input type="text" placeholder="guess" name="word">
+        <button>Submit</button>
+    </form>
+     <!-- <div class="container" > -->
+        <div id="score">
+            <p id="score-text">0</p>
+        </div>
+        <p id="result"> </p>
+        <div class="container">
+            <table>
+            {% for row in board %}
+                <tr> {% for letter in row %} 
+                    <td>{{ letter }}</td>
+                    {% endfor %}
+                </tr>
+            {% endfor %}
+        </table>
+        <div id="final-score" hidden>
+        </div>
+    </div>
+    </div>
+    </div>
+    <!-- </div> -->
 </body>
 <script src="http://unpkg.com/jquery"></script>
 <script src="https://unpkg.com/axios/dist/axios.min.js"></script>
