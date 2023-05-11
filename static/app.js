@@ -36,6 +36,7 @@ class BoggleGame {
         let score = this.score
         const $final = $('#final-score').append(`<p class="final">${this.score}
         <form action="/set-up" method="POST" class="restart"> <button>RESTART</button></form></p>`)
+        // $('.restart').on('submit', function())
         
         
         const res = await axios.post('/high_score', {score: score})

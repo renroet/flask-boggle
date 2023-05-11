@@ -22,6 +22,11 @@ form {
     margin: auto;
 }
 
+#begin {
+    font-size: 20px;
+    width: 100px;
+}
+
 .container {
     position: relative;
     margin: auto;
@@ -40,7 +45,7 @@ table {
     text-align: center;
     border-collapse: collapse;
     border: solid black 3px;
-    z-index: 9;
+    /* z-index: 9; */
 }
 
 td {
@@ -78,14 +83,14 @@ td {
     margin: auto;
     text-align: center;
     border: solid rgb(63, 63, 63) 3px;
-    z-index: 10;
+    /* z-index: 10; */
 }
 
 .final {
     position: absolute;
     text-align: center;
     margin: auto;
-    margin-top: 25%;
+    margin-top: 22%;
     font-size: 100px;
     width: 103%;
     height: 99%; 
@@ -95,7 +100,7 @@ td {
     position: absolute;
     text-align: center;
     margin: auto;
-    margin-top: 15%;
+    margin-top: 6%;
     font-size: 80px;
     width: 103%;
     height: 99%; 
